@@ -5,8 +5,8 @@
   ],
   "dependencyDashboard": true,
   "dependencyDashboardTitle": "🔄 Dependency Dashboard - Homelab Updates",
-  "assignees": ["perrymanuk"],
-  "reviewers": ["perrymanuk"],
+  "assignees": ["19stephan93"],
+  "reviewers": ["19stephan93"],
   "packageRules": [
     {
       "matchPackageNames": [

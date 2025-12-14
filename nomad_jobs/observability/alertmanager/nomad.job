@@ -164,7 +164,7 @@ route:
 receivers:
 - name: 'email'
   email_configs:
-  - to: 'pmanuk@perrymanuk.com'
+  - to: 'stefanstan.tech@gmail.com'
 
 - name: pushover
   pushover_configs:

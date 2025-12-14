@@ -2,13 +2,13 @@
 
 ## Purpose
 
-This script (`sync_secrets.py`), running inside a Docker container, reads environment variables defined in the project's root `.envrc` file and synchronizes them as GitHub secrets to the `perrymanuk/hashi-homelab` repository using the `PyGithub` library.
+This script (`sync_secrets.py`), running inside a Docker container, reads environment variables defined in the project's root `.envrc` file and synchronizes them as GitHub secrets to the `19stephan93/hashi-homelab` repository using the `PyGithub` library.
 
 ## Requirements
 
 *   **Docker:** Docker must be installed and running to build and execute the container.
 *   **`NOMAD_VAR_github_pat` Environment Variable:** A GitHub Personal Access Token (PAT) with the `repo` scope must be available as an environment variable named `NOMAD_VAR_github_pat` in the **host shell** where you run the `make` command. The Makefile target (`sync-secrets`) will handle passing this token into the container under the name `GITHUB_TOKEN` for the script to use.
-*   **`.envrc` File:** An `.envrc` file must exist at the project root (`/Users/perry.manuk/git/perrymanuk/hashi-homelab/.envrc`) containing the secrets to sync.
+*   **`.envrc` File:** An `.envrc` file must exist at the project root (`/Users/perry.manuk/git/19stephan93/hashi-homelab/.envrc`) containing the secrets to sync.
 
 ## Usage
 
@@ -18,7 +18,7 @@ This script (`sync_secrets.py`), running inside a Docker container, reads enviro
     ```
 2.  **Navigate to the project root directory:**
     ```bash
-    cd /Users/perry.manuk/git/perrymanuk/hashi-homelab
+    cd /Users/perry.manuk/git/19stephan93/hashi-homelab
     ```
 3.  **Run the Makefile target:**
     ```bash
